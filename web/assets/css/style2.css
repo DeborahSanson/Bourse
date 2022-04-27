@@ -246,10 +246,6 @@ body {
     z-index: 2;
 }
 
-/* .formResponsive {
-    height: 50%;
-    
-} */
 
 input[type=text] {
     padding:10px;
@@ -367,7 +363,7 @@ iframe {
 }
 
 fieldset div {
-    padding: 10px;
+    padding: 5px;
 }
 
 .legend1 {
@@ -738,6 +734,17 @@ footer img {
         margin-left:5%;
         /* padding-top: 5%; */
         padding-bottom: 5%;
+    }
+
+    .formResponsive {
+        /* height: 50vh; */
+        /* margin-top: -20%; */
+         
+          
+      }
+
+      fieldset div {
+        padding: 10px;
     }
 }
 
