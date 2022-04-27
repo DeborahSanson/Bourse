@@ -247,10 +247,13 @@ body {
     z-index: 2;
 }
 
+<<<<<<< HEAD
 .formResponsive {
     height: 110vh;
     
 }
+=======
+>>>>>>> 2237b3b5be8534a2d3bea737c39cb7c166bb678b
 
 input[type=text] {
     padding:10px;
@@ -343,6 +346,14 @@ h1 {
     font-size: 2rem;
 }
 
+#accueilTextBox {
+    font-size: 2rem;
+}
+
+#containerTextBox {
+    font-size: 2rem;
+}
+
 .info3 {
     display:flex;
     flex-direction:column;
@@ -374,7 +385,7 @@ iframe {
 }
 
 fieldset div {
-    padding: 10px;
+    padding: 5px;
 }
 
 .legend1 {
@@ -697,14 +708,14 @@ footer img {
 #attractZone2 {
     /* width: 27vw; */
     /* min-width: 350px; */
-    height: 56vh;
+    /* height: 56vh;
     background-color: rgba(165,65,65,0.61);
     flex: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 10px; */
     margin-bottom: 50px;
 }
 
@@ -759,6 +770,17 @@ footer img {
         margin-left:5%;
         /* padding-top: 5%; */
         padding-bottom: 5%;
+    }
+
+    .formResponsive {
+        /* height: 50vh; */
+        /* margin-top: -20%; */
+         
+          
+      }
+
+      fieldset div {
+        padding: 10px;
     }
 }
 
