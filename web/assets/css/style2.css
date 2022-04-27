@@ -27,10 +27,11 @@ body {
     height: 15vh;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: left;
     align-items: center;
     opacity: 1;
-    z-index: 50;
+    z-index: 100;
 }
 
 #menu img {
@@ -555,6 +556,39 @@ footer img {
 /* ajout des medias queries pour le reponsive  */
 
 @media screen and (max-width: 780px){
+
+    #menu {
+        top: 0;
+        margin-top: -20px;
+        position: fixed;
+        background-color: #4A9F67;
+        height: 14vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        opacity: 1;
+        z-index: 100;
+    }
+
+    .logo {
+        padding-right: 30px;
+        width: 100%;
+        z-index: 99;
+        padding-top: 30px;
+                
+    }
+    
+    ul {
+        padding-left: 5px;
+            }
+
+
+    li {
+        font-size: 0.7rem;
+    }
     
   #bigZoneAttract{
         flex-direction: column;
@@ -569,6 +603,8 @@ footer img {
         height : 100vh;
         justify-content: space-between;
         width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
         /* z-index: -50; */
         
  }
@@ -592,17 +628,81 @@ footer img {
     
     }
 
+    .info1 {
+        margin-top: 5vh;
+        padding-top: 5%;  
+        padding-bottom: 5%;      
+    }
+
+
+    .info2 {
+        padding-top: 5%;  
+        padding-bottom: 5%;
+    }
+
+    .info3 {
+        margin-bottom:-10%;
+        padding-top: 5%;  
+        padding-bottom: 5%;
+    }
+
 #map, iframe  {
         place-self: center;
         align-self: center;
         /* position: absolute;   */
         width: 100%;
-        height: 50%;
-        /* padding-top: 400px; */
+        height: 60%;
+        /* padding-bottom: 100px */
         /* z-index: 50; */
         display: block;
 }
 
+#map {
+    /* margin-top: 10vh; */
+    /* height: 80vh; */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 
+
+#attractZone2 {
+    /* width: 27vw; */
+    /* min-width: 350px; */
+    height: 56vh;
+    background-color: rgba(165,65,65,0.61);
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#attractZone2:before {
+    position: absolute;
+    /* width: 27vw; */
+    /* min-width: 350px; */
+    height: 56vh;
+    background-color: rgba(165,65,65,0.3);
+    border-radius: 10px;
+    content: "";
+}
+
+#azImg1 {
+    width: 90%;
+    height: 20vh;
+    justify-self:flex-start;
+}
+
+#azImg2 {
+    width: 45%;
+    height: 19vh;
+}
+#azImg3 {
+    width: 45%;
+    height: 19vh;
+}
+
+}
 
 /* créer media pour la nav, avec display none pour le menu, et une icone pour menu burger */
