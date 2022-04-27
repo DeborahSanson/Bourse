@@ -332,6 +332,14 @@ h1 {
     font-size: 1rem;
 }
 
+#accueilTextBox {
+    font-size: 2rem;
+}
+
+#containerTextBox {
+    font-size: 2rem;
+}
+
 .info3 {
     display:flex;
     flex-direction:column;
@@ -672,14 +680,14 @@ footer img {
 #attractZone2 {
     /* width: 27vw; */
     /* min-width: 350px; */
-    height: 56vh;
+    /* height: 56vh;
     background-color: rgba(165,65,65,0.61);
     flex: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 10px; */
     margin-bottom: 50px;
 }
 
