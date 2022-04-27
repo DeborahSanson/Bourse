@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brocan'tech</title>
+    <link rel="stylesheet" href="../assets/css/style2.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- BARRE DE NAV FIXE TOUJOURS VISIBLE -->
+        <nav id="menu">
+            <a href="index.html"><img src="../assets/img/Logo_Amiens.svg" alt=""></a>
+            <div id="menuSep"></div>
+            <ul>
+                <li><a href="#home">Accueil</a>
+                    <hr>
+                </li>
+                <li><a href="#attractZone">Présentation</a>
+                    <hr>
+                </li>
+                <li><a href="#infoZone">Information</a>
+                    <hr>
+                </li>
+                <li><a href="#formRegister">Inscription</a>
+                    <hr>
+                </li>
+                <li><a href="#">Connexion</a>
+                    <hr>
+                </li>
+                <li><a href="#">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div id="homeHeader"></div>
+        <div id="accueilMain">
+            <div id="accueilTextBox">
+                <div>BROCAN'TECH</div>
+            </div>
+            <div id="boxContainer">
+                <div id="emptyBlock"></div>
+                <div id="containerTextBox">
+                    Bourse au High-Tech à Amiens
+                </div>
+            </div>
+        </div>
+        <div id="homeFooter"></div>
+        </div>
+    </section>
+
+    <section id="attractZone">
+        <!-- Zone de pub pour attirer un max de monde -->
+        <div id="attractZone1">
+            <span>Offrez une seconde vie à votre électronique</span>
+        </div>
+        <div id="bigZoneAttract">
+            <div id="attractZone2">
+                <img id="azImg1" src="../assets/img/smartphone2019bc-494.jpg" alt="smartphone">
+                <img id="azImg2" src="../assets/img/Cable.jpg" alt="cable">
+                <img id="azImg3" src="../assets/img/consolesjpg.jpg" alt="consoles">
+            </div>
+            <div id="attractZone3">
+                <h2>Vous avez des cartons d'éléctronique qui prennent la poussière?</h2>
+                <p>Ils vont probablement intéresser d'autres personnes!
+                    Venez exposer et mettre en vente vos anciennes consoles, vos cables USB, vos smartphones sans
+                    chargeurs,
+                    vos chargeurs sans smartphones, et qui sait, peut-être dépanner quelqu'un au passage.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="infoZone">
+        <!-- Google maps, bus, horaire, covid ect -->
+        <!-- Espace pour Quentin-->
+        <div id="infoContainer">
+            <div id="info">
+                <div class="info1">
+                    <h1>Lundi 6 juin 2022 de 8h à 18h.</h1>
+                    <p>Possibilité de réserver par créneau de 4h ou plus.</p>
+                </div>
+                <div class="info2">
+                    <h1>Informations COVID-19</h1>
+                    <p>La bourse à la Tech BROCAN'TECH est accessible sans pass
+                        sanitaire.</p>
+                    <p>Chacun est tout de même tenu de respecter les gestes barrières.</p>
+                    <h1>Informations sécurité</h1>
+                    <p>Pour toute atteinte à la sécurité, merci de contacter<br>la gendarmerie située à 100m</p>
+                </div>
+                <div class="info3">
+                    <h1>70 rue des Jacobins, coeur de ville</h1>
+                    <p>Accessible en véhicule particulier ou en bus via les
+                        lignes 6,7 et 9</p>
+                </div>
+            </div>
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.468405468839!2d2.299287015242658!3d49.8900088354693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e78446501e03cb%3A0xd90c13e3b01c0596!2s70%20Rue%20des%20Jacobins%2C%2080000%20Amiens!5e0!3m2!1sfr!2sfr!4v1649755415807!5m2!1sfr!2sfr"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+    <section id="formRegister">
+        <!-- Formulaire d'inscription exposant pour lui permettre d'avoir le formulaire de réservation de l'emplacement 
+        le bouton submit renvoi sur -->
+        <form action="registred.html" method="GET">
+            <fieldset>
+                <div class="legend1" style="align-self: center;">Je m'inscris en tant qu'exposant</div>
+                <div><label for="name">Nom :</label>
+                    <input type="text" id="name" placeholder="Nom">
+                </div>
+                <div><label for="firstName">Prénom :</label>
+                    <input type="text" id="firstName" placeholder="Prénom">
+                </div>
+                <div><label for="password">Mot de passe :</label>
+                    <input type="password" id="password" placeholder="Mot de Passe">
+                </div>
+                <div><label for="confirmPassword">Confirmez le mot de passe :</label>
+                    <input type="password" id="confirmPassword" placeholder="Mot de Passe">
+                </div>
+                <div><label for="emailAdress">Adresse Mail :</label>
+                    <input type="text" id="emailAdress" placeholder="Adresse mail">
+                </div>
+                <div><label for="shopName">Nom de la boutique :</label>
+                    <input type="text" id="shopName" placeholder="Nom de la boutique">
+                </div>
+                <input type="submit" id="submit" value="Confirmer">
+            </fieldset>
+        </form>
+        </div>
+
+    </section>
+    <footer>
+        <div id="legalMention">
+            <p><a href="https://www.amiens.fr/Liens-utiles/Mentions-legales"> Mentions légales</a></p>
+            <p><a href="https://www.amiens.fr/Liens-utiles/Politique-de-Confidentialite"> Politique des données
+                    personnelles</a></p>
+        </div>
+        <div id="footerLogo">
+            <img id="asLogo" src="../assets/img/logo2.png" alt="logo Amiens métropole">
+            <div id="logoSocialMedia">
+                <img src="../assets/img/twitter-svgrepo-com.svg" alt="Twitter">
+                <img src="../assets/img/instagram-svgrepo-com.svg" alt="Instagram">
+                <img src="../assets/img/1602517253330.jfif" alt="">
+                <img src="../assets/img/facebook-svgrepo-com.svg" alt="Facebook">
+            </div>
+        </div>
+    </footer>

@@ -74,6 +74,8 @@ body {
 }
 #accueilMain{
     display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex:3;
     background-color:rgba(26,169,255,0.3);;
 }
@@ -87,18 +89,18 @@ body {
     margin-left:5%;
     margin-right:5%;
 }
-.accueilTextBox{
+#accueilTextBox{
     display:flex;
     flex:1;
-    font-family:SpotifyBold !important;
-    color:white !important;
-    background-color:rgba(165,65,65,0.74) !important;
-    font-size: 9vh !important;
-    border-radius:25px !important;
-    margin-left:10% !important;
-    margin-right:10% !important;
-    justify-content: center !important;
-    align-items:center !important;
+    font-family:SpotifyBold;
+    color:white;
+    background-color:rgba(165,65,65,0.74);
+    font-size: 2rem;
+    border-radius:25px;
+    margin-left:10%;
+    margin-right:10%;
+    justify-content: center;
+    align-items:center;
 }
 
 #emptyBlock{
@@ -106,10 +108,10 @@ body {
 }
 #containerTextBox{
     display:flex;
-    min-width: 400px;
+    /* min-width: 400px; */
     flex:1;
     font-family:SpotifyMedium;
-    font-size:50px;
+    font-size:1rem;
     color:white;
     background-color:rgba(165,65,65,0.74);
     border-radius:25px;
@@ -144,31 +146,35 @@ body {
 }
 
 #attractZone3 > h2{
-    font-size:3vh;
+    font-size:1.2rem;
 }
+
 #attractZone3 > p{
-    font-size:2vh;
+    font-size:0.8rem;
 }
+
 #attractZone1 span {
     width: 100%;
     color: white;
     text-align: center;
-    font-size: 7vh;
+    font-size: 1.3rem;
     
 }
 
 #bigZoneAttract {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 20px;
 }
 #attractZone2 {
-    width: 27vw;
-    min-width: 350px;
+    /* width: 27vw; */
+    /* min-width: 350px; */
     height: 56vh;
     background-color: rgba(165,65,65,0.61);
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -178,8 +184,8 @@ body {
 
 #attractZone2:before {
     position: absolute;
-    width: 27vw;
-    min-width: 350px;
+    /* width: 27vw; */
+    /* min-width: 350px; */
     height: 56vh;
     background-color: rgba(165,65,65,0.3);
     border-radius: 10px;
@@ -191,17 +197,18 @@ body {
     height: 31vh;
     justify-self:flex-start;
 }
+
 #azImg2 {
     width: 45%;
-    height: 19.01vh;
+    height: 19vh;
 }
 #azImg3 {
     width: 45%;
     height: 19vh;
 }
 #attractZone3 {
-    width: 27vw;
-    min-width: 350px;
+    /* width: 27vw; */
+    /* min-width: 350px; */
     height: 56vh;
     background-color: rgba(165,65,65,0.61);
     padding: 10px;
@@ -209,12 +216,19 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex: 1;
     gap: 20px;
     text-align: justify;
     border-radius: 10px;
+    overflow: auto;
     }
 
 #infoZone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     height: 100vh;
     background-color: rgb(74,159,103, 0.31); 
 }
@@ -256,7 +270,7 @@ fieldset {
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
-    font-size: 20px;
+    font-size: 1rem;
     border-style: solid;
     border-radius: 10px;
     width: 100%;
@@ -265,6 +279,7 @@ fieldset {
 
 #infoContainer {
     display: flex;
+    flex-wrap: wrap;
     height : 100vh;
     justify-content: space-around;
     width: 100%;
@@ -273,6 +288,7 @@ fieldset {
 #info{
     display:flex;
     flex-direction:column;
+    /* flex: 1; */
 
 }
 .info1 {
@@ -285,7 +301,7 @@ fieldset {
     /* margin-left: 26%; */
     border-radius: 15px;
     text-align: center;
-    max-width: 40vw;
+    /* max-width: 40vw; */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color: rgba(159, 89, 83, 0.7);
     color: #FFFFFF;
@@ -300,13 +316,17 @@ fieldset {
     /* margin-left: 26%; */
     border-radius: 15px;
     text-align: center;
-    max-width: 40vw;
+    /* max-width: 40vw; */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color: rgba(68, 152, 186, 0.7);
     color: #FFFFFF;
 }
 .info2 > h1:last-of-type{
-    margin-top:5vh;
+    margin-top: 5vh;
+}
+
+h1 {
+    font-size: 1rem;
 }
 
 .info3 {
@@ -316,7 +336,7 @@ fieldset {
     flex:1;
     max-height: 40vh;
     border-radius: 15px;
-    max-width: 40vw;
+    /* max-width: 40vw; */
     text-align: center;
     /* margin-left: 26%; */
     margin-bottom:10vh;
@@ -327,15 +347,15 @@ fieldset {
 
 #map {
     margin-top: 10vh;
-    margin-right: 5%;
     height: 80vh;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 iframe {
     width: 40vw;
+    flex: 1;
     height: 80vh;
-    opacity: unset;
+    opacity: unset;  
     border-radius: 15px;
 }
 
@@ -344,7 +364,7 @@ fieldset div {
 }
 
 .legend1 {
-    font-size: 25px;
+    font-size: 1rem;
     width: 100%;
     text-align: center;
 }
@@ -444,7 +464,7 @@ footer img {
     border-top-left-radius:10px;
     border-top-right-radius:10px;
     font-family:SpotifyMedium;
-    font-size:2vw;
+    font-size:1rem;
     justify-content:center;
     align-items:center;
 }
@@ -453,7 +473,7 @@ footer img {
     flex:3;
     background-color: #E8D5D4;
     font-family:SpotifyMedium;
-    font-size:1.2vw;
+    font-size: 1rem;
 }
 #placeCategories{
     display:flex;
@@ -493,7 +513,7 @@ footer img {
     border-bottom-right-radius:10px;
     text-align:center;
     font-family:SpotifyMedium;
-    font-size:1.5vw;
+    font-size:1rem;
 }
 #sellerInfos > p > img{
     max-height: 4vh;
@@ -518,9 +538,9 @@ footer img {
     opacity:0.7;
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
-    font-size:1.5vw;
+    font-size:1rem;
     text-align:center;
-    font-size:1.5vw;
+    font-size:1rem;
     font-family:SpotifyMedium;
     align-items:center;
 }
@@ -530,3 +550,58 @@ footer img {
 #placeFooter{
     flex:1;
 }
+
+/* ajout des medias queries pour le reponsive  */
+
+@media screen and (max-width: 780px){
+    
+  #bigZoneAttract{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #infoContainer {
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        justify-content: flex-end;
+        height : 100vh;
+        justify-content: space-between;
+        width: 100%;
+        /* z-index: -50; */
+        
+ }
+
+    #infoZone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100vh;
+        flex: 1;
+        background-color: rgb(74,159,103, 0.31);
+    }
+
+    #info{
+        display:flex;
+        flex-direction:column;
+        /* flex: 1; */
+        z-index: 50;
+    
+    }
+
+#map, iframe  {
+        place-self: center;
+        align-self: center;
+        /* position: absolute;   */
+        width: 100%;
+        height: 50%;
+        /* padding-top: 400px; */
+        /* z-index: 50; */
+        display: block;
+}
+
+
+
+/* créer media pour la nav, avec display none pour le menu, et une icone pour menu burger */
