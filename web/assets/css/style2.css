@@ -52,6 +52,11 @@ body {
     margin-right: 30px;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 #menu ul li {
     list-style: none;
 }
@@ -335,8 +340,12 @@ h1 {
 #accueilTextBox{
     font-size: 1rem;
 }
+
+#accueilTextBox > h1 {
+    font-size: 100%;
+}
 #containerTextBox{
-    font-size: 2rem;
+    /* font-size: 2rem; */
 }
 
 #accueilTextBox {
@@ -699,6 +708,8 @@ nav a:hover
     top: 35%;
     /* flex-direction: column-reverse; */
     
+
+
 }
 .iconColor{
     filter:brightness(0) invert(1) ;
@@ -887,4 +898,15 @@ nav a:hover
     }
 }
 
+
+/* @media screen and (min-width: 500px) {
+    #bigZoneAttract {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+} */
 /* créer media pour la nav, avec display none pour le menu, et une icone pour menu burger */
