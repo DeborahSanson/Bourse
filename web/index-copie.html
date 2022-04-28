@@ -34,14 +34,53 @@
                 </li>
                 <li><a href="#">Déconnexion</a></li>
             </ul>
+        </div>
         </nav>
     </header>
+
+
+
+
+
+
+    <div class="menuBurger2">
+        <!-- BARRE DE NAV FIXE TOUJOURS VISIBLE -->
+        
+        <nav id="menu2">
+            <a href="index-copie.html"><img src="assets/img/Logo_Amiens.svg" alt="" class="logo"></a>
+            <div class="labite">
+                
+                        <label for="toggle" class="labelMenu2"> <img  class="iconColor" src="assets/img/menuburger.svg" alt=""></label>
+
+                
+                    <input type="checkbox" id="toggle">
+                    <div class="main_pages">
+                        <a href="#home">Accueil</a>
+                        <a href="#attractZone">Présentation</a>
+                        <a href="#infoZone">Information</a>
+                        <a href="#">Connexion</a>
+                        <a href="#">Déconnexion</a>
+                    </div>
+                
+            </div>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+
+
+
 
     <section id="home">
         <div id="homeHeader"></div>
         <div id="accueilMain">
-            <div id="accueilTextBox">
-                <div>BROCAN'TECH</div>
+            <div id="accueilTextBox" >
+                <h1>BROCAN'TECH</h1>
             </div>
             <div id="boxContainer">
                 <div id="emptyBlock"></div>
@@ -110,7 +149,7 @@
     <section id="formRegister">
         <!-- Formulaire d'inscription exposant pour lui permettre d'avoir le formulaire de réservation de l'emplacement 
         le bouton submit renvoi sur -->
-        <form action="registred.html" method="GET" class="formResponsive">
+        <form action="registred-copie.html" method="GET" class="formResponsive">
             <fieldset>
                 <div class="legend1" style="align-self: center;">Je m'inscris en tant qu'exposant</div>
                 <div><label for="name">Nom :</label>
@@ -131,6 +170,7 @@
                 <div><label for="shopName">Nom de la boutique :</label>
                     <input type="text" id="shopName" placeholder="Nom de la boutique">
                 </div>
+                
                 <input type="submit" id="submit" value="Confirmer">
             </fieldset>
         </form>
