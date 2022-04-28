@@ -13,26 +13,47 @@
 
     <header>
         <!-- BARRE DE NAV FIXE TOUJOURS VISIBLE -->
-        <nav id="menu">
-            <a href="index.html"><img src="assets/img/Logo_Amiens.svg" alt="" class="logo"></a>
-            <div id="menuSep"></div>
-            <ul>
-                <li><a href="#home">Accueil</a>
-                    <hr>
-                </li>
-                <li><a href="#attractZone">Présentation</a>
-                    <hr>
-                </li>
-                <li><a href="#infoZone">Information</a>
-                    <hr>
-                </li>
-                <li><a href="#formResa">Réservation</a>
-                    <hr>
-                </li>
-                <li><a href="#">Déconnexion</a></li>
-            </ul>
+        <nav id="menuBurger">
+            <a href="index-copie.html"><img src="assets/img/Logo_Amiens.svg" alt="" class="logo"></a>
+            <div class="main_pages">
+                <a href="#home">Accueil</a>
+                <a href="#attractZone">Présentation</a>
+                <a href="#infoZone">Information</a>
+                <a href="#">Connexion</a>
+                <a href="#">Déconnexion</a>
+
+            </div>
         </nav>
     </header>
+
+
+
+
+
+
+    <div class="menuBurger2">
+        <!-- BARRE DE NAV FIXE TOUJOURS VISIBLE -->
+        
+        <nav id="menu2">
+            <a href="index-copie.html"><img src="assets/img/Logo_Amiens.svg" alt="" class="logo"></a>
+            <div class="labite">
+                
+                        <label for="toggle" class="labelMenu2"> <img  class="iconColor" src="assets/img/menuburger.svg" alt=""></label>
+
+                
+                    <input type="checkbox" id="toggle">
+                    <div class="main_pages">
+                        <a href="#home">Accueil</a>
+                        <a href="#attractZone">Présentation</a>
+                        <a href="#infoZone">Information</a>
+                        <a href="#">Connexion</a>
+                        <a href="#">Déconnexion</a>
+                    </div>
+                
+            </div>
+        </nav>
+    </div>
+
     <section id="home">
         <div id="homeHeader"></div>
         <div id="accueilMain">
@@ -50,12 +71,14 @@
         </div>
         <!-- L'accueil -->
     </section>
+
     <section id="attractZone">
         <!-- Zone de pub pour attirer un max de monde -->
         <div id="attractZone1">
             <span>Offrez une seconde vie à votre électronique</span>
         </div>
         <div id="bigZoneAttract">
+            
             <div id="attractZone2">
                 <img id="azImg1" src="assets/img/smartphone2019bc-494.jpg" alt="">
                 <img id="azImg2" src="assets/img/Cable.jpg" alt="">
@@ -100,7 +123,7 @@
     </section>
     <section id="formResa">
         <!-- Formulaire de réservation de l'emplacement pour l'exposant enregistré -->
-        <form action="reserved.html" method="get">
+        <form action="reserved-copie.html" method="get">
             <fieldset>
                 <div class="legend1" style="align-self: center;">Je réserve mon emplacement :</div>
                 <div><label for="hardware">Type de matériel vendu :</label>

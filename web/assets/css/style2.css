@@ -20,7 +20,9 @@ body {
     font-family:Spotify;
 }
 
-#menu {
+
+
+#menuBurger {
     top: 0;
     position: fixed;
     background-color: #4A9F67;
@@ -28,7 +30,7 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
     opacity: 1;
     z-index: 100;
@@ -179,20 +181,20 @@ body {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     border-radius: 10px;
 }
 
-#attractZone2:before {
+/* #attractZone2:before {
     position: absolute;
-    /* width: 27vw; */
-    /* min-width: 350px; */
+     width: 27vw; 
+     min-width: 350px; 
     height: 56vh;
     background-color: rgba(165,65,65,0.3);
     border-radius: 10px;
     content: "";
-}
+} */
 
 #azImg1 {
     width: 90%;
@@ -291,7 +293,7 @@ fieldset {
 #info{
     display:flex;
     flex-direction:column;
-    /* flex: 1; */
+    flex: 1;
 
 }
 .info1 {
@@ -562,20 +564,44 @@ footer img {
 #placeFooter{
     flex:1;
 }
+.logo {
+    padding-right: 30px;
+    width: 60%;
+    height: 50%;
+    z-index: 99;
+    padding-top: 30px;
+
+}
 
 /* ajout des medias queries pour le reponsive  */
+.labelMenu, #toggle
+{
+    display: none;
+}
 
-@media screen and (max-width: 780px){
+.menuBurger2{
+    display: none;
+}
 
-    #menu {
-        top: 0;
-        margin-top: -20px;
+
+@media screen and (max-width: 915px){
+
+    header{
+        display:none ;
+    }
+
+    .menuBurger2{
+        display: block;
+        height: 15vh;
+    }
+
+    #menu2 {
+        top: 0;        
         position: fixed;
         background-color: #4A9F67;
-        height: 14vh;
+        height: 15vh;
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        display: flex;        
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
@@ -583,12 +609,97 @@ footer img {
         z-index: 100;
     }
 
+
+
+
+    /* debut try menu burugur */
+
+
+nav 
+{
+    width: 100%;
+    background: #48435C;
+    height: 15vh;
+    z-index: 100;
+}
+nav .main_pages 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    background: #4A9F67;
+    height: 220px;
+}
+nav .main_pages a 
+{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    text-decoration: none;
+    color: white;
+    width: 50%;
+}
+#toggle:checked + .main_pages {
+    display: flex;
+    /* position: absolute; */
+    /* align-self: flex-end; */
+    /* top: 20px;
+    left: 80%; */
+}
+/* #toggle:checked{
+    position: fixed;
+} */
+
+nav a:hover 
+{
+    color: rgba(165,65,65,0.74)
+}
+
+.labelMenu2
+{
+    width: 30px;
+    display: flex;
+    justify-content: center; 
+    align-items: center ;
+    margin: 0 ;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+.labite{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 75%;
+    top: 35%;
+    /* flex-direction: column-reverse; */
+    
+}
+.iconColor{
+    filter:brightness(0) invert(1) ;
+}
+
+
+
+
+
+
+/* fin try menu burugur */
+
+
     .logo {
         padding-right: 30px;
-        width: 100%;
+        width: 60%;
+        height: 50%;
         z-index: 99;
         padding-top: 30px;
-                
+        padding-left: 25px;
     }
     
     ul {
@@ -600,7 +711,7 @@ footer img {
         font-size: 0.7rem;
     }
     
-  #bigZoneAttract{
+#bigZoneAttract{
         flex-direction: column;
         flex-wrap: wrap;
     }
@@ -635,6 +746,7 @@ footer img {
         flex-direction:column;
         /* flex: 1; */
         z-index: 50;
+
     
     }
 
