@@ -21,8 +21,7 @@ body {
 }
 
 
-
-#menuBurger {
+#menu {
     top: 0;
     position: fixed;
     background-color: #4A9F67;
@@ -197,18 +196,18 @@ body {
 } */
 
 #azImg1 {
-    width: 90%;
-    height: 31vh;
+    width: 100%;
+    height: 35vh;
     justify-self:flex-start;
 }
 
 #azImg2 {
-    width: 45%;
-    height: 19vh;
+    width: 50%;
+    height: 20vh;
 }
 #azImg3 {
-    width: 45%;
-    height: 19vh;
+    width: 50%;
+    height: 20vh;
 }
 #attractZone3 {
     /* width: 27vw; */
@@ -238,7 +237,7 @@ body {
 }
 
 #formRegister {
-    height: 100vh;
+    height: 120vh;
     background-color: #a54141;
     opacity: 0.7;
     display: flex;
@@ -332,6 +331,12 @@ fieldset {
 
 h1 {
     font-size: 1rem;
+}
+#accueilTextBox{
+    font-size: 1rem;
+}
+#containerTextBox{
+    font-size: 2rem;
 }
 
 #accueilTextBox {
@@ -451,9 +456,10 @@ footer img {
 }
 #placeMain{
     display:flex;
-    flex:5;
 }
+
 #placeBlock1{
+    width: 100%;
     display:flex;
     flex-direction:column;
     flex: 1;
@@ -463,7 +469,19 @@ footer img {
     background-color: #a54141;
     opacity: 0.7;
 }
+@media screen and (max-widht :780px){ 
+
+    #placeMain{
+        flex-direction: column;  
+    }
+    #formRegister{
+        height: 50%;
+
+    }
+
+}
 #placeBlock2{
+    width: 100%;
     display:flex;
     flex-direction:column;
     flex: 1;
@@ -471,6 +489,7 @@ footer img {
     margin-right:5%;
     margin-left:5%;
 }
+
 #placeTitle{
     display:flex;
     flex:1;
